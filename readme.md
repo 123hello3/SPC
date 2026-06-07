@@ -1,25 +1,21 @@
-# Project Structure
+## Directory Structure
+### 1. `infer/`
+This directory stores all codes for model inference and performance evaluation.
+- `infer.py`: Core script for evaluation. Please update the relevant file paths inside this file according to your local environment before execution.
 
-- infer/: Contains inference and evaluation code.  
+### 2. `verl/`
+This directory contains the complete codes for model training.
+- `run.sh`: Startup script for launching the training process.
 
-infer.py: Main evaluation script. Modify the storage paths in the script before running. 
+## Usage Instructions
+### Model Evaluation
+1. Navigate to the `infer` folder.
+2. Modify the data and model storage paths in `infer.py` to match your local file configuration.
+3. Execute the script to run evaluation.
 
-- verl/: Contains training-related code.  
-
-run.sh: Training launch script. 
-
-# Getting Started 
-
-- Evaluation
-
-Go to the `infer/` directory. 
-
-Open `infer.py` and update the model/data storage paths. 
-
-Run the evaluation script. 
-
-- Training 
-
-Go to the `verl/` directory. 
-
-Run the training script: bash run.sh
+### Model Training
+1. Enter the `verl` folder.
+2. Run the startup script via the following command:
+```bash
+bash run.sh
+```
